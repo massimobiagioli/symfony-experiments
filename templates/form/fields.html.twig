@@ -1,0 +1,9 @@
+{% block form_row %}
+<div class="form_row">
+    <span style="border: 1px solid blue; padding: 3px 5px; margin-right: 5px;" title="{{ form.vars.attr['data-tooltip'] }}">i</span>
+    <b>{{ form_label(form) }}</b>
+    {{ form_errors(form) }}
+    {{ form_widget(form) }}
+    <div style="margin-bottom: 4px;"></div>
+</div>
+{% endblock form_row %}
